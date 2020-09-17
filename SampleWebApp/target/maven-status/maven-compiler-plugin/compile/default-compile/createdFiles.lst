@@ -1,3 +1,4 @@
+edu\eci\cvds\servlet\bean\CalculadoraBean.class
 edu\eci\cvds\servlet\model\Todo.class
 edu\eci\cvds\servlet\SampleServlet.class
 edu\eci\cvds\servlet\model\SampleServlet_2.class
