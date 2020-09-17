@@ -1,27 +1,35 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <script>
-            function validateForm() {
-            var x = document.forms["myForm"]["fname"].value;
-            alert("Este es: "+x);
-            alert("tipo de x: "+ typeof x);
-            if (isNaN(x)) { //Decidimos que fuera numero entero para que estuviera mas restringido
-              alert("El numero debe ser entero");
-              return false;
-            }
-	      return x;
-          }
-        </script>
-        <h1>Welcome!</h1>
-    <form name="myForm" action="/data?id=" onsubmit="return validateForm()" method="get">
+<head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        alert("Este es: "+x);
+        alert("tipo de x: "+ typeof x);
+        if (isNaN(x)) { //Decidimos que fuera numero entero para que estuviera mas restringido
+            alert("El numero debe ser entero");
+            return false;
+        }
+    }
+</script>
+<h1>Welcome</h1>
+
+
+<form name="myForm" action="/data?id=" onsubmit="return validateForm()" method="post">
     Id que desea buscar: <input type="text" name="fname">
     <input type="submit" value="Submit">
 
-    </form>
-    </body>
-</html>	
+</form>
+</body>
+
+</html>

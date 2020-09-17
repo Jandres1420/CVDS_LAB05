@@ -5,6 +5,7 @@ import edu.eci.cvds.servlet.Service;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileNotFoundException;
@@ -17,7 +18,7 @@ import java.util.Optional;
 @WebServlet(
         urlPatterns = "/data"
 )
-public class SampleServlet_2 extends SampleServlet {
+public class SampleServlet_2 extends HttpServlet {
 
     private int Id;
 
